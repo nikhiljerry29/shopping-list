@@ -26,7 +26,7 @@ server.use("/", homeRoute);
 /**
  * Application listening on port for API requests
  */
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 server.listen(port, (err) => {
     if (!err) console.log(`Application server running on port :: ${port}`);
 });
